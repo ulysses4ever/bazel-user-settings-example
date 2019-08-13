@@ -9,6 +9,8 @@ def _rule_impl(ctx):
 drink_rule = rule(
     implementation = _rule_impl,
     attrs = {
-        "flavor": attr.label()
+        "flavor": attr.label(
+            default = "//e1:favorite_flavor",
+        )
     }
 )
