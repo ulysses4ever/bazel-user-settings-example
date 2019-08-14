@@ -1,6 +1,6 @@
 load("//e1:build_settings.bzl", "FlavorProvider")
 def _rule_impl(ctx):
-    type = ctx.attr.flavor[FlavorProvider].type
+    type = ctx.attr._flavor[FlavorProvider].type
     if type:
         print("Get the opposite of default")
     else:
@@ -9,7 +9,7 @@ def _rule_impl(ctx):
 drink_rule = rule(
     implementation = _rule_impl,
     attrs = {
-        "flavor": attr.label(
+        "_flavor": attr.label(
             default = "//e1:favorite_flavor",
         )
     }
