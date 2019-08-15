@@ -1,1 +1,1 @@
-#workspace(name = "bsws")
+workspace(name = "bsws")
