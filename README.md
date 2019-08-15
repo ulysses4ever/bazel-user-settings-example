@@ -25,7 +25,7 @@ it will print:
 DEBUG: .../rules.bzl:5:9: Get the opposite of default (True)
 ```
 
-### The bug (branch: bug)
+### The bug (branch: [bug](https://github.com/ulysses4ever/bazel-user-settings-example/commit/1d79b746b0323e0450a99aedea9e8e3c3d924c07))
 
 Same code, except using workspace prefix for referencing the build-sertting target. Both commands listed above yield the same result:
 ```
